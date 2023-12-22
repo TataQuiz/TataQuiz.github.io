@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body, html {
+    background: #377bbc;
+    height: 100%;
+    min-width: 300px;
+    margin: 0px auto;
+}
+.nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: #377bbc;
+    border-bottom: 3px solid #ffffff;
+}
+.logo img{width: 110px;}
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    font-size: 20px;
+}
+.open-menu, .close-menu {
+    position: absolute;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu {
+    top: 50%;
+    right: 20px;
+    font-size: 35px;
+    transform: translateY(-50%);
+}
+.close-menu{
+    top: 35px;
+    font-size: 40px;
+    right: 20px;
+}
+.nav-btn {
+    float: left;
+    display: block;
+    height: 115px;
+    padding: 45px 25px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    transition: box-shadow .2s;
+}
+#check {display: none;}
+@media(max-width: 610px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        min-width: 225px;
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        right: -100%;
+        z-index: 100;
+        background-color: #003775;
+        transition: all 0.2s ease-in-out;
+    }
+    .margintop {
+        margin-top: 114px;
+    }
+    .nav-btn {
+        width: 100%;
+        height: 90px;
+        padding-top: 35px;
+        border-bottom: 1px solid #ffffff;
+    }
+    .menu li a {
+        width: 100%;
+    }
+    .open-menu, .close-menu {display: block;}
+    #check:checked ~ .menu {right: 0;}
+}
+li:hover:not([disabled]){
+    background: #2561B7;
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(33, 33, 33, .2);
+}
+.begin {
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.titel h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #ffffff;
+}
+.samenvatting p {
+    margin-top: 20px;
+    font-weight: 100;
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+.quizzen-btn button {
+    background: #ffffff;
+    color: #3D7EDB;
+    font-weight: bold;
+    font-size: 16px;
+    width: 225px;
+    height: 75px;
+    padding: 10px;
+    border: 1px solid #222222;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.quizzen-btn button:hover{
+    background: #3D7EDB;
+    color: #ffffff;
+}
+.quizzen-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    margin: 0 5vw;
+    height: 100%;
+}

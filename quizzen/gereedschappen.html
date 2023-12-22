@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gereedschappen Quiz | Tata Quiz</title>
+        <link rel="icon" type="image/x-icon" href="../images/tatasteel.ico"></link>
+        <link rel="stylesheet" href="../css/quizlayout.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="nav-bar">
+                    <a href="../"><li class="logo"><img src="../images/tatasteelicon.png"></li></a>
+                    <input type="checkbox" id="check">
+                    <span class="menu">
+                        <a href="../quizzen"><li class="nav-btn margintop">Quizzen</li></a>
+                        <a href="../scoreborden"><li class="nav-btn">Scoreborden</li></a>
+                        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                    </span>
+                    <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+        <div class="timerbar">
+            <p id="timertxt">00:00</p>
+        </div>
+        <div class="middlebar"></div>
+        <div class="app">
+            <h2 id="vraag"></h2>
+            <div class="quiz">
+                <div id="antwoord-buttons">
+                <button class="btn" id="0"></button>
+                <button class="btn" id="1"></button>
+                <button class="btn" id="2"></button>
+            </div>
+            <div id="imagediv">
+            </div>
+        </div>
+        <div id="eindeForm" hidden>
+            <p id="eindeTitel">Om je score te bekijken en op te slaan moet je een Naam invoeren.
+                <p id="letOp">Let op: Als je de quiz al eerder hebt gemaakt, wordt je score alleen opgeslagen als deze is verbeterd.</p>
+            </p>
+            <div class="formInput" id="formInput">
+                <h2>Naam: </h2>
+                <input type="text" maxlength="25" spellcheck="false" id="naamInput" onkeyup="checkNaam()" onkeydown="checkNaam()">
+                <div id="errorMsg" hidden></div>
+                <button id="submitBtn" disabled>Opslaan</button>
+            </div>
+            <div id="resultaatDiv" class="resultaatDiv" hidden>
+                <p id="resultaatTxt"></p>
+                <a href="../quizzen"><button id="terugBtn" hidden>Terug naar Quizzen</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="buttonbar">
+        <div class="bottombar"></div>
+        <div class="volgende">
+            <button id="volgende-btn">Volgende</button>
+        </div>
+        <div class="vraagnummer">
+            <p id="vraagnr"></p>
+        </div>
+        <div class="vorige">
+            <button id="vorige-btn">Vorige</button>
+        </div>
+    </div>
+    </div>
+    </body>
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-database-compat.js"></script>
+    <script type="module" src="../scripts/script.js"></script>
+    <script>
+    const naamInput = document.getElementById("naamInput");
+    const errorMsg = document.getElementById("errorMsg")
+    const submitBtn = document.getElementById("submitBtn");
+    const regex = /^[a-zA-Z\s]*$/;
+    function checkNaam(){
+    if(naamInput.value.length > 0){
+        submitBtn.disabled = false;
+    }else{
+        submitBtn.disabled = true;
+    }
+    if (regex.test(naamInput.value)){
+        errorMsg.hidden = true;
+    } else{
+        errorMsg.hidden = false;
+        submitBtn.disabled = true;
+        errorMsg.textContent = 'Alleen letters en spaties zijn toegestaan.'
+    }
+}
+</script>
+</html>

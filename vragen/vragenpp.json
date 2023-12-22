@@ -1,0 +1,255 @@
+{
+	"vragen": {
+		"1": {
+			"vraag": "Wat vormt het basisprincipe van de werking van een verdringerpomp?",
+			"antwoorden": [
+				{ "text": "Drukverschil tussen inlaat- en uitlaatkant."},
+            	{ "text": "Centrifugale kracht."},
+            	{ "text": "Magnetische aantrekking tussen de pomp en de vloeistof."}
+			],
+			"type": "normal"
+			},
+		"2": {
+			"vraag": "Hoe heet de pomp dat te zien is in het plaatje?",
+			"antwoorden": [
+				{ "text": "een Tandradpomp."},
+				{ "text": "een Centrifugaalpomp."},
+				{ "text": "een Membraanpomp."}
+			],
+			"type": "image",
+			"image": "pompen2"
+			},
+		"3": {
+			"vraag": "Wanneer is de eerste water pomp uitgevonden?",
+			"antwoorden": [
+				{ "text": "Ongeveer 1500 na Christus."},
+            	{ "text": "Ongeveer 400 na Christus."},
+            	{ "text": "Ongeveer 200 voor Christus."}
+			],
+			"type": "normal"
+			},
+		"4": {
+			"vraag": "Wat is de belangrijkste factor die verantwoordelijk is voor de stroming van water in rivieren en stromen?",
+			"antwoorden": [
+				{ "text": "Zwaartekracht."},
+            	{ "text": "Magnetische aantrekkingskracht."},
+            	{ "text": "Zonnestraling."}
+			],
+			"type": "normal"
+			},
+		"5": {
+			"vraag": "Wat wordt bedoeld met de term 'opvoerhoogte' bij een pomp?",
+			"antwoorden": [
+				{ "text": "De totale hoeveelheid vloeistof die een pomp per uur kan verplaatsen."},
+            	{ "text": "De maximale diepte waarop een pomp in een waterbron kan worden geplaatst."},
+            	{ "text": "De verticale afstand tussen de inlaat en uitlaat van de pomp waarover de vloeistof omhoog wordt gepompt."}
+			],
+			"type": "normal"
+			},
+		"6": {
+			"vraag": "Wat wordt bedoeld met de term 'manometrische druk' van een pomp?",
+			"antwoorden": [
+				{ "text": "De druk die wordt gegenereerd door de beweging van de pompzuiger of rotor."},
+            	{ "text": "De totale druk die wordt uitgeoefend door de pomp op de vloeistof in het systeem, inclusief statische en kinetische druk."},
+            	{ "text": "De druk die wordt gemeten met een manometer op het bedieningspaneel van de pomp."}
+			],
+			"type": "normal"
+			},
+		"7": {
+			"vraag": "Wat is een andere veelvoorkomende naam voor een monopomp?",
+			"antwoorden": [
+				{ "text": "een Plunjerpomp."},
+            	{ "text": "een Zijkanaalpomp."},
+            	{ "text": "een Vloeistofringpomp."}
+			],
+			"type": "normal"
+			},
+		"8": {
+			"vraag": "Hoe heet de pomp dat te zien is in het plaatje?",
+			"antwoorden": [
+				{ "text": "een Monopomp."},
+				{ "text": "een Zijkanaalpomp."},
+				{ "text": "een Vloeistofringpomp."}
+			],
+			"type": "image",
+			"image": "pompen8"
+			},
+		"9": {
+			"vraag": "Waarvoor worden zijkanaalpompen vaak gebruikt?",
+			"antwoorden": [
+				{ "text": "Het verpompen van dikke en viskeuze vloeistoffen."},
+            	{ "text": "Het opwekken van vacuüm."},
+            	{ "text": "Het verpompen van water uit diepe putten."}
+			],
+			"type": "normal"
+			},
+		"10": {
+			"vraag": "Hoe creëert een vloeistofringpomp met vacuümsysteem vacuüm?",
+			"antwoorden": [
+				{ "text": "Door centrifugale kracht."},
+            	{ "text": "Door een roterende vloeistofring die een luchtledige omgeving creëert."},
+            	{ "text": "Door het verplaatsen van een zuiger om lucht te comprimeren."}
+			],
+			"type": "normal"
+			},
+		"11": {
+			"vraag": "Wat is het belangrijkste werkingsprincipe van een centrifugaalpomp?",
+			"antwoorden": [
+				{ "text": "Het veranderen van het volume van een afgesloten ruimte."},
+            	{ "text": "Het verplaatsen van vloeistof door middel van roterende schoepen."},
+            	{ "text": "Het opwekken van druk door middel van een zuiger."}
+			],
+			"type": "image",
+			"image": "pompen11"
+			},
+		"12": {
+			"vraag": "Waarom zou een pomp met een hogere drukcapaciteit meestal worden gekozen in industriële toepassingen?",
+			"antwoorden": [
+				{ "text": "Voor het genereren van vacuüm."},
+            	{ "text": "Voor het verpompen van viskeuze vloeistoffen."},
+            	{ "text": "Voor hogere drukvereisten."}
+			],
+			"type": "normal"
+			},
+		"13": {
+			"vraag": "Hoe kun je de snelheid of capaciteit van een pomp aanpassen terwijl deze in gebruik is?",
+			"antwoorden": [
+				{ "text": "Door de temperatuur van de omgeving aan te passen."},
+            	{ "text": "Door de inlaat- of uitlaatkleppen gedeeltelijk te openen of te sluiten."},
+            	{ "text": "Door de kleur van de pomp te veranderen."}
+			],
+            "type": "normal"
+			},
+		"14": {
+			"vraag": "Wat is een belangrijke meting bij het beoordelen van de prestaties van een monopomp?",
+			"antwoorden": [
+				{ "text": "De kleurweerstand, waarbij er wordt beoordeeld hoe goed de pomp de kleur van de vloeistof behoudt."},
+            	{ "text": "De geurintensiteit, waarbij er wordt gemeten hoe sterk de pomp de geur van de verpompte vloeistof behoudt."},
+            	{ "text": "De capaciteit, waarbij er wordt gemeten hoeveel vloeistof de pomp per minuut kan verplaatsen."}
+			],
+			"type": "normal"
+		    },
+		"15": {
+			"vraag": "Hoe heet de pomp dat te zien is in het plaatje?",
+			"antwoorden": [
+				{ "text": "een Slangenpomp."},
+				{ "text": "een Monopomp."},
+				{ "text": "een Tandradpomp."}
+			],
+			"type": "image",
+			"image": "pompen15"
+			},
+		"16": {
+			"vraag": "Welke zin over een lobbenpomp is correct?",
+			"antwoorden": [
+				{ "text": "Een lobbenpomp verplaatst vloeistof door middel van draaiende lobben die een vacuüm creëren en zo de vloeistof aanzuigen en transporteren."},
+            	{ "text": "Een lobbenpomp maakt gebruik van magnetische resonantie om vloeistof in beweging te brengen."},
+            	{ "text": "De werking van een lobbenpomp is gebaseerd op zwaartekracht, waarbij lobben de vloeistof naar beneden trekken en omhoog duwen."}
+			],
+			"type": "image",
+			"image": "pompen16"
+			},
+		"17": {
+			"vraag": "Wat is een veelvoorkomende toepassing van lobbenpompen?",
+			"antwoorden": [
+				{ "text": "Het mixen van chemicaliën in laboratoriumomgevingen."},
+            	{ "text": "Het oppompen van water uit diepe putten."},
+            	{ "text": "Het verpompen van viskeuze vloeistoffen zoals olie en slurry's in industriële processen."}
+			],
+			"type": "normal"
+			},
+		"18": {
+			"vraag": "Wat is een mogelijke uitslag van een meting van de druk bij de uitlaat van een goed functionerende zijkanaalpomp?",
+			"antwoorden": [
+				{ "text": "De druk bij de uitlaat is hoger dan de druk bij de inlaat."},
+            	{ "text": "De druk bij de uitlaat is gelijk aan de druk bij de inlaat."},
+            	{ "text": "De druk bij de uitlaat is lager aan de druk bij de inlaat."}
+			],
+			"type": "normal"
+			},
+		"19": {
+			"vraag": "Hoe verplaatst een slangenpomp vloeistof?",
+			"antwoorden": [
+				{ "text": "Door het behulp van draaiende tandwielen."},
+            	{ "text": "Door een membraan op en neer te bewegen."},
+            	{ "text": "Door vloeistof door een flexibele buis te knijpen."}
+			],
+			"type": "normal"
+			},
+		"20": {
+			"vraag": "Hoe werkt het pompprincipe van een tandwielpomp",
+			"antwoorden": [
+				{ "text": "Tandwielpompen genereren elektrische lading om vloeistof aan te drijven."},
+            	{ "text": "Tandwielpompen verplaatsen vloeistof door tandwielen die draaien en vloeistof tussen zich verplaatsen."},
+            	{ "text": "Tandwielpompen gebruiken magnetische krachten om vloeistof te verplaatsen."}
+			],
+			"type": "normal"
+			},
+		"21": {
+			"vraag": "Hoe beweegt een membraanpomp vloeistof?",
+			"antwoorden": [
+				{ "text": "Door het omhoog en omlaag bewegen van een flexibel membraan."},
+            	{ "text": "Door het genereren van centrifugale kracht."},
+            	{ "text": "Door het knijpen van een flexibele buis."}
+			],
+			"type": "image",
+			"image": "pompen21"
+			},
+		"22": {
+			"vraag": "Wat is rendement in de context van pompen?",
+			"antwoorden": [
+				{ "text": "Het totale volume vloeistof dat een pomp kan verplaatsen."},
+            	{ "text": "De mate waarin een pomp energie omzet in hydraulische arbeid in vergelijking met de energie-invoer."},
+            	{ "text": "De temperatuurverandering van de vloeistof tijdens het pompen."}
+			],
+			"type": "normal"
+			},
+		"23": {
+			"vraag": "Hoe wordt het rendement van een pomp meestal uitgedrukt?",
+			"antwoorden": [
+				{ "text": "In kilogrammen per seconde (kg/s)."},
+            	{ "text": "In percentages."},
+            	{ "text": "In pascal (Pa)."}
+			],
+			"type": "normal"
+			},
+		"24": {
+			"vraag": "Wat is een gebruikelijke toepassing van een centrifugaalpomp?",
+			"antwoorden": [
+				{ "text": "Het verpompen van dikke en viskeuze vloeistoffen."},
+            	{ "text": "Het genereren van vacuüm."},
+            	{ "text": "Het omhoog pompen van water uit een waterput."}
+			],
+			"type": "normal"
+			},
+		"25": {
+			"vraag": "Hoe heet de pomp dat te zien is in het plaatje?",
+			"antwoorden": [
+				{ "text": "een Slangenpomp."},
+				{ "text": "een Centrifugaalpomp."},
+				{ "text": "een Tandradpomp."}
+			],
+			"type": "image",
+			"image": "pompen25"
+			},
+		"26": {
+			"vraag": "Wat is een voordeel van het gebruik van een membraanpomp?",
+			"antwoorden": [
+				{ "text": "Het heeft een snelle stroomsnelheid."},
+            	{ "text": "Het bezit zelfaanzuigend vermogen."},
+            	{ "text": "Het is geschikt voor het verpompen van viskeuze vloeistoffen."}
+			],
+			"type": "normal"
+			},
+        "27": {
+			"vraag": "Wat is de belangrijkste functie van een terugslagklep in een pompinstallatie?",
+			"antwoorden": [
+				{ "text": "Het regelen van de stroomsnelheid van de pomp."},
+            	{ "text": "Het voorkomen van terugstroming van vloeistof in de pomp."},
+            	{ "text": "Het verhogen van de druk in het pompsysteem."}
+			],
+			"type": "normal",
+			"laatste": "ja"
+  			}
+	}
+}

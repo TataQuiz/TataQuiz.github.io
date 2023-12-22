@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body, html {
+    background: #377bbc;
+    height: 100%;
+    min-width: 300px;
+    margin: 0px auto;
+}
+.nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: #377bbc;
+    border-bottom: 3px solid #ffffff;
+}
+.logo img{width: 110px;}
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    font-size: 20px;
+}
+.open-menu, .close-menu {
+    position: absolute;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu {
+    top: 50%;
+    right: 20px;
+    font-size: 35px;
+    transform: translateY(-50%);
+}
+.close-menu{
+    top: 35px;
+    font-size: 40px;
+    right: 20px;
+}
+.nav-btn {
+    float: left;
+    display: block;
+    height: 115px;
+    padding: 45px 25px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    transition: box-shadow .2s;
+}
+#check {display: none;}
+@media(max-width: 610px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        min-width: 225px;
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        right: -100%;
+        z-index: 100;
+        background-color: #003775;
+        transition: all 0.2s ease-in-out;
+    }
+    .margintop {
+        margin-top: 114px;
+    }
+    .nav-btn {
+        width: 100%;
+        height: 90px;
+        padding-top: 35px;
+        border-bottom: 1px solid #ffffff;
+    }
+    .menu li a {
+        width: 100%;
+    }
+    .open-menu, .close-menu {display: block;}
+    #check:checked ~ .menu {right: 0;}
+}
+li:hover:not([disabled]){
+    background: #2561B7;
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(33, 33, 33, .2);
+}
+.app{
+    background: #ffffff;
+    width: 90%;
+    max-width: 1500px;
+    min-height: 430px;
+    margin: 0px auto 0;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.timerbar{
+    background: #ffffff;
+    width: 90%;
+    max-width: 1500px;
+    margin: 2vw auto 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-bottom: 30px;
+    padding-right: 5px;
+}
+.middlebar{
+    width: 90%;
+    max-width: 1500px;
+    height: 15px;
+    margin: 0px auto 0;
+    background: rgb(218, 215, 215);
+}
+.timerbar p {
+    color: #3D7EDB;
+    float: right;
+    font-size: 30px;
+}
+.quiz{
+    display: flex;
+    flex-direction: row;
+}
+.app h2{
+    padding: 20px 0 0px;
+    font-size: 1.6vw;
+    color: #001f52;
+    font-weight: 600;
+    overflow: hidden;
+}
+#eindeForm {
+    text-align: center;
+    min-height: 430px;
+}
+#eindeTitel {
+    padding: 20px 0 0px;
+    font-size: 1.6vw;
+    color: #001f52;
+    font-weight: 600;
+    overflow: hidden;
+}
+#letOp {
+    padding: 5px 0 0px;
+    font-size: 1vw;
+    color: #001f52;
+    overflow: hidden;
+}
+.centerResultaat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resultaatDiv {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 750px;
+}
+.formInput {
+    padding: 60px 0 0;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+}
+.formInput h2 {
+    text-align: left;
+    font-size: 1.2vw;
+    margin-bottom: 8px;
+}
+.formInput input {
+    border-radius: 4px;
+    border: 1px solid #797979;
+    width: 100%;
+    font-size: 1vw;
+    outline: none;
+    padding: 8px 10px 8px;
+    max-width: 500px;
+    min-height: 50px;
+    display: block;
+}
+.formInput input:focus {
+    border: 1px solid #146cd1;
+    box-shadow: 0px 0px 7px rgba(109, 179, 255, 0.75);
+}
+#errorMsg {
+    float: left;
+    color: red;
+    margin-top: 10px;
+}
+#terugBtn{
+    max-width: 250px;
+}
+#submitBtn, #terugBtn {
+    background: #3D7EDB;
+    color: #fff;
+    font-weight: 500;
+    min-height: 45px;
+    width: 100%;
+    padding: 10px 5px;
+    border: 1px solid #222222;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+#submitBtn:hover:not([disabled]), #terugBtn:hover:not([disabled]){
+    background: rgb(35, 87, 160);
+    color: #fff;
+}
+#submitBtn:disabled,
+#submitBtn[disabled], #terugBtn:disabled, #terugBtn[disabled]{
+    background-color: #cccccc;
+    color: #818181;
+}
+#resultaatTxt {
+    font-size: 1.6vw;
+    color: #001f52;
+    font-weight: 600;
+    overflow: hidden;
+}
+.btn{
+    background-color: #3D7EDB;
+    color: #ffffff;
+    font-weight: 500;
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid #222222;
+    padding: 10px;
+    margin: 8px 0;
+    font-size: 1.2vw;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+.selected{
+    background-color: #1c4f97;
+}
+.image{
+    border-radius: 8px;
+    border: 1px solid #222222;
+}
+.bottombar{
+    width: 100%;
+    max-width: 1500px;
+    height: 5px;
+    margin: 0px auto 0;
+    background: rgb(218, 215, 215);
+}
+.buttonbar{
+    background: #ffffff;
+    width: 90%;
+    max-width: 1500px;
+    min-height: 60px;
+    margin: 0px auto 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.btn:hover{
+    background: #2561B7;
+    color: #ffffff
+}
+.selected:hover{
+    background-color: #19498b;
+}
+#antwoord-buttons{
+    margin-top: 20px;
+    width: 100%;
+}
+.imagestyle{
+    flex: 1;
+    display: flex;
+    padding-left: 50px;
+    align-items: center;
+    justify-content: center;
+}
+#imagediv img{
+    width: 250px;
+    height: 250px;
+}
+.volgende{
+    float: right;
+    width: 33%;
+}
+.vorige{
+    float: left;
+    width: 33%;
+}
+#volgende-btn{
+    background: #3D7EDB;
+    color: #fff;
+    font-weight: 500;
+    float: right;
+    max-width: 150px;
+    width: 100%;
+    padding: 10px 5px;
+    border: 1px solid #222222;
+    margin: 9px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+#volgende-btn:hover:not([disabled]){
+    background: rgb(35, 87, 160);
+    color: #fff;
+}
+#volgende-btn:disabled,
+#volgende-btn[disabled]{
+    transition: all 0.0s;
+    background-color: #cccccc;
+    color: #818181;
+}
+#vorige-btn{
+    background: #3D7EDB;
+    color: #ffffff;
+    font-weight: 500;
+    float: left;
+    max-width: 150px;
+    width: 100%;
+    padding: 10px 5px;
+    border: 1px solid #222222;
+    margin: 9px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+#vorige-btn:hover:not([disabled]){
+    background: rgb(35, 87, 160);
+    color: #fff;
+}
+#vorige-btn:disabled,
+#vorige-btn[disabled]{
+    background-color: #cccccc;
+    color: #818181;
+}
+.vraagnummer{
+    float: right;
+    text-align: center;
+    width: 34%;
+    margin: 12px auto 0;
+}
+.vraagnummer p{
+    font-size: 25px;
+    color: #001e4d;
+}
+.container {
+    margin: 0 5vw;
+    height: 100%;
+}
+@media screen and (max-width: 1350px){
+    .app h2, #eindeTitel, #resultaatTxt {
+        font-size: 21.5px;
+    }
+    #letOp {
+        font-size: 13.5px;
+    }
+    .formInput input {
+        font-size: 14px;
+    }
+    .btn, .btnimg, .formInput h2{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 750px){
+    .quiz{
+        flex-direction: column-reverse;
+    }
+    .timerbar {
+        margin: 16px auto 0;
+    }
+    .imagestyle{
+        margin-top: 20px;
+        padding-left: 0px;
+    }
+}
+@media screen and (max-width: 500px){
+    .formInput{
+        padding: 40px 0 0; 
+    }
+    #errorMsg{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .toplogo{
+        min-width: 300px;
+    }
+    .timerbar p {
+        font-size: 24px;
+    }
+    .timerbar {
+        padding-bottom: 24px;
+    }
+    .app h2, #eindeTitel, #resultaatTxt {
+        font-size: 18.5px;
+    }
+    #letOp, .formInput input, #vorige-btn, #volgende-btn{
+        font-size: 12px;
+    }
+    .formInput h2 {
+        font-size: 13px;
+    }
+    .btn, .btnimg{
+        font-size: 13px;
+    }
+    #imagediv img{
+        width: 180px;
+        height: 180px;
+    }
+    .vraagnummer {
+        margin: 14px auto 0;
+    }
+    .vraagnummer p{
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 300px) {
+    .btn {
+        width: 183px;
+    }
+}
