@@ -105,7 +105,6 @@ li:hover:not([disabled]){
 }
 .container {
     margin: 0 5vw;
-/*     height: 100%; */
 }
 .quiz-container {
     margin: 2vw auto 0;
