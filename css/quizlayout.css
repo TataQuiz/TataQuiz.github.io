@@ -357,7 +357,6 @@ li:hover:not([disabled]){
 }
 .container {
     margin: 0 5vw;
-/*     height: 100%; */
 }
 @media screen and (max-width: 1350px){
     .app h2, #eindeTitel, #resultaatTxt {
