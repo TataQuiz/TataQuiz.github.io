@@ -96,7 +96,7 @@ li:hover:not([disabled]){
 }
 .container {
     margin: 0 5vw;
-    height: 100%;
+/*     height: 100%; */
 }
 .scorebordtopbar{
     background: #ffffff;
